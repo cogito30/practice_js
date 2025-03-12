@@ -76,19 +76,17 @@ body {
     justify-content: center;
     margin-right: 20px;
     cursor: pointer;
-    &:active {
-        border: 1px solid #e8d9a9;
-        background: #38d919;
-    }
+}
+
+.to-do-list .to-do-item .check-circle.done {
+    border: 1px solid #e8d9a9;
+    background: #38d919;
 }
 
 .to-do-list .to-do-item .text {
     flex: 1;
     font-size: 21px;
     color: #495057;
-    &:active {
-        color: #ced4da;
-    }
 }
 
 .to-do-list .to-do-item .remove {
