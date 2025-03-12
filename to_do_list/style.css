@@ -28,19 +28,16 @@ body {
     padding-bottom: 24px;
     border-bottom: 1px solid #e9ecef;
 }
-
 .to-do-head h1 {
   margin: 0;
   font-size: 36px;
   color: #343a40;
 }
-
 .to-do-head .day {
   margin-top: 4px;
   color: #868e96;
   font-size: 21px;
 }
-
 .to-do-head .tasks-left {
   color: #20c997;
   font-size: 18px;
@@ -53,5 +50,57 @@ body {
     padding: 20px 32px;
     padding-bottom: 48px;
     overflow-y: auto;
-    background: gray;
+    /* background: gray; */
 }
+
+.to-do-list .to-do-item {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    &:hover {
+        .remove {
+            opacity: 1;
+        }
+    }
+}
+
+.to-do-list .to-do-item .check-circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: 1px solid #ced4da;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    cursor: pointer;
+    &:active {
+        border: 1px solid #e8d9a9;
+        background: #38d919;
+    }
+}
+
+.to-do-list .to-do-item .text {
+    flex: 1;
+    font-size: 21px;
+    color: #495057;
+    &:active {
+        color: #ced4da;
+    }
+}
+
+.to-do-list .to-do-item .remove {
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #dee2e6;
+    font-size: 24px;
+    cursor: pointer;
+    &:hover {
+        color: #ff6b6b;
+    }
+}
+
