@@ -9,6 +9,7 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
 
@@ -19,9 +20,51 @@
             <li class="btnStart">></li>
             <li class="btnStop">||</li>
         </ul>
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="inner"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner"></div>
+            </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
     </div>
+
+
+
+    <script>
+        var swiper = new Swiper(".wrap", {
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            slidesPerView: "auto",
+            spaceBetween: 50,
+            loop: true,
+            centeredSlides: true,
+            speed: 1000,
+            direction: "horizontal",
+        });
+    </script>
     
     
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
