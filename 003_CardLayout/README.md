@@ -1,8 +1,8 @@
 # 3. Navigation Bar
 
 ## Goal
-- Flexbox로 정렬
-- Navbar(메뉴바) 만들기
+- Grid로 정렬
+- 카드 만들기
 
 ## Practice
 - (요소를 그리드 방식으로 배치) display: grid;
