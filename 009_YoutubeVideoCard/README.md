@@ -1,4 +1,4 @@
-# 89. YoutubeVideoCard
+# 9. YoutubeVideoCard
 
 ## Goal
 - 유튜브 영상 카드 UI 디자인 연습
