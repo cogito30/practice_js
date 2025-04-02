@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Animation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="section">
+        <h1>스크롤을 내려보세요 👇</h1>
+    </div>
+
+    <div class="hidden-box">🚀 스크롤하면 나타나는 박스!</div>
+
+    <script>
+        document.addEventListener("scroll", function () {
+            let box = document.querySelector(".hidden-box");
+            let boxPosition = box.getBoundingClientRect().top;
+            let screenHeight = window.innerHeight;
+
+            if (boxPosition < screenHeight * 0.99) {
+            box.classList.add("show");
+                }
+        });
+    </script>
+</body>
+</html>
