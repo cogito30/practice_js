@@ -1,4 +1,4 @@
-# 1. HTML & CSS
+# 1. Profile Card
 
 ## Goal
 - HTML 구조 잡기
