@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>탭 UI</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function openTab(evt, tabName) {
+            let i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</head>
+<body>
+
+<div class="tab">
+    <button class="tablinks active" onclick="openTab(event, 'Home')">홈</button>
+    <button class="tablinks" onclick="openTab(event, 'News')">뉴스</button>
+    <button class="tablinks" onclick="openTab(event, 'Contact')">연락처</button>
+</div>
+
+<div id="Home" class="tabcontent" style="display: block;">
+    <h2>홈</h2>
+    <p>홈 페이지 내용입니다.</p>
+</div>
+
+<div id="News" class="tabcontent">
+    <h2>뉴스</h2>
+    <p>최신 뉴스를 확인하세요.</p>
+</div>
+
+<div id="Contact" class="tabcontent">
+    <h2>연락처</h2>
+    <p>문의 사항이 있으면 연락 주세요.</p>
+</div>
+
+</body>
+</html>
